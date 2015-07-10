@@ -1,0 +1,1609 @@
+/* @group general */
+.skipNav {
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	display: block;
+	overflow: hidden;
+	top: -10px;
+	line-height: -10px;
+	text-decoration: none;
+	text-indent: -9999px;
+}
+/* @group preloader */
+
+.preloader {
+	display: block;
+	height: 1px;
+	width: 1px;
+	background-color: #333F58;
+	position: absolute;
+	top: -1;
+	left: -1;
+	z-index: 0;
+	overflow: hidden;
+}
+.preloader span {
+	display: block;
+}
+.preloader .recorder {
+	background-image: url(../Shared/Images/controls/audio2010.png);
+}
+.preloader .selectTest {
+	background-image: url(../Shared/Images/icons/select.gif);
+}
+.preloader .loading {
+	background-image: url(../Shared/Images/loadingAnimation.gif);
+}
+.preloader .spinner {
+	background-image: url(../Shared/Images/saved.gif);
+}
+.preloader .sprites_yui {
+	background-image: url(../Shared/Images/controls/context.gif);
+}
+.preloader .sprites_buttons {
+	background-image: url(../Shared/Images/controls/sprites_student.png);
+}
+.preloader .buttons_back {
+	background-image: url(../Shared/Images/controls/buttons_base.png);
+}
+.preloader .masking {
+	background-image: url(../Shared/Images/white.png);
+}
+/* @end */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+}
+.clear {
+	clear: both;
+	display: block;
+}
+.tds-ot-wrapper {
+	font-size: 68%;
+}
+.tds-ot-section {
+	padding: 1em;
+	font-size: 1.2em;
+	line-height: 1.1em;
+}
+.ot-shadowBox {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70em;
+}
+/* fakes drop shadow for Firefox 2 */
+.browserVer_2.browser_firefox .ot-shadowBox, .browserVer_3.browser_firefox .ot-shadowBox {
+	border: 3px solid #eaeaea;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+}
+.ot-innerShadow {
+	border: solid 2px #d3eabb;
+	-moz-box-shadow: 0em 0em 5px #666;
+	-webkit-box-shadow: 0em 0em 5px #666;
+	box-shadow: 0em 0em 5px #666;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	padding: 1em;
+}
+.TDS_PS_L2 .ot-innerShadow{
+	padding: 1em 1em 2em 1em;
+}
+.ot-shadowBox h2 {
+    border-bottom: 1px solid #04A033;
+    font-size: 2.5em;
+    line-height: 1em;
+    margin-bottom: .5em;
+}
+
+.ot-shadowBox .instructions {
+    border-bottom: 1px solid #CDE7B2;
+    border-top: 1px solid #CDE7B2;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+    padding: 1em 0;
+}
+
+.practiceTest .forOperational, .forPractice, .practiceTest .goPractice {
+	display: none;
+}
+.practiceTest .forPractice {
+	display: inherit;
+}
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+select option {
+    padding-right: 1em;
+}
+
+.tool-help {
+	width: 720px !important;
+}
+.TDS_PS_L1 .tool-help {
+	width: 820px !important;
+}
+.TDS_PS_L2 .tool-help, .TDS_PS_L3 .tool-help, .TDS_PS_L4 .tool-help {
+	width: 900px !important;
+}
+/* @end */
+
+/* @group zooming */
+
+.TDS_PS_L1 #sections { 
+	font-size: 1.2em; 
+}
+.TDS_PS_L2 #sections { 
+	font-size: 1.5em; 
+}
+.TDS_PS_L3 #sections { 
+	font-size: 2em; 
+}
+.TDS_PS_L4 #sections { 
+	font-size: 2.4em;
+	line-height: 1em; 
+}
+
+.TDS_PS_L1 #sections input, .TDS_PS_L2 #sections input, .TDS_PS_L3 #sections input, .TDS_PS_L4 #sections input, .TDS_PS_L1 #sections select, .TDS_PS_L2 #sections select, .TDS_PS_L3 #sections select, .TDS_PS_L4 #sections select { 
+	font-size: 1em;
+}
+.TDS_PS_L1 #sectionLogin input, .TDS_PS_L2 #sectionLogin input, .TDS_PS_L3 #sectionLogin input, .TDS_PS_L4 #sectionLogin input { 
+	margin-top: -.2em;
+}
+.TDS_PS_L1 #sections input[type=checkbox], .TDS_PS_L2 #sections input[type=checkbox], .TDS_PS_L3 #sections input[type=checkbox], .TDS_PS_L4 #sections input[type=checkbox] {
+	height: 1em !important;
+	width: 1em !important;
+} 
+.TDS_PS_L2 .ot-shadowBox, .TDS_PS_L3 .ot-shadowBox, .TDS_PS_L4 .ot-shadowBox, .TDS_PS_L3 #sectionTestApproval .ot-shadowBox, .TDS_PS_L4 #sectionTestApproval .ot-shadowBox, .TDS_PS_L2 #loginWrap, .TDS_PS_L3 #loginWrap, .TDS_PS_L4 #loginWrap, .TDS_PS_L1.practiceTest #sectionLogin .ot-shadowBox, .TDS_PS_L2.practiceTest #sectionLogin .ot-shadowBox, .TDS_PS_L3.practiceTest #sectionLogin .ot-shadowBox, .TDS_PS_L4.practiceTest #sectionLogin .ot-shadowBox, .TDS_PS_L1 #ot-blurbs, .TDS_PS_L2 #ot-blurbs, .TDS_PS_L3 #ot-blurbs, .TDS_PS_L4 #ot-blurbs {
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    float: none;
+}
+.TDS_PS_L1 .blurb, .TDS_PS_L2 .blurb, .TDS_PS_L3 .blurb, .TDS_PS_L4 .blurb {
+	margin-left: 0px;
+	margin-top: .5em;
+}
+.TDS_PS_L4 .loginForm label, .TDS_PS_L4.HAW .loginForm label {
+   width: 300px;
+   max-width: inherit;
+   min-width: inherit;
+}
+.TDS_PS_L1 #sectionLogin .ot-shadowBox, .TDS_PS_L2 #sectionLogin .ot-shadowBox, .TDS_PS_L3 #sectionLogin .ot-shadowBox, .TDS_PS_L4 #sectionLogin .ot-shadowBox {
+	width: auto;
+}
+.TDS_PS_L1.practiceTest #loginWrap, .TDS_PS_L2.practiceTest #loginWrap, .TDS_PS_L3.practiceTest #loginWrap, .TDS_PS_L4.practiceTest #loginWrap {
+	width: auto;
+}
+.TDS_PS_L1 #sectionTestApproval .ot-shadowBox, .TDS_PS_L2 #sectionTestApproval .ot-shadowBox {
+	margin-left: auto;
+	margin-right: auto;
+}
+.TDS_PS_L3 #sectionTestSelection table {
+	font-size: .9em;
+} 
+.TDS_PS_L4 #sectionTestSelection table {
+	font-size: .8em;
+}
+.TDS_PS_L4 #sectionTestSelection table a {
+	font-size: .9em;
+}
+.TDS_PS_L4.ESN #sectionTestSelection table a {
+	width: 9.5em;
+	font-size: .85em;
+}
+.TDS_PS_L1 .accommodations select {
+    max-width: 30em;
+}
+.TDS_PS_L2 .accommodations select {
+    max-width: 24em;
+}
+.TDS_PS_L3 .accommodations select {
+    max-width: 16em;
+}
+.TDS_PS_L4 .accommodations select {
+    max-width: 12em;
+}
+
+/* @end */
+
+
+/* @group header and footer */
+#ot-topBar {
+    background-color: #175283;
+    color: #FFFFFF;
+    height: 25px;
+    padding-right: 5px;
+    border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #fff;
+}
+#ot-studentInfo {
+	background-color: #0E4878;
+    border-right: 1px solid #5092C8;
+    display: block;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.sessionID {
+    border-right: 1px solid #5092C8;
+    display: block;
+    float: right;
+    height: 25px;
+    line-height: 25px;
+    padding-right: 5px;
+}
+.languages {
+    display: block;
+    float: left;
+    padding-left: 5px;
+    padding-top: 3px;
+}
+.ot-smallButtons a {
+	background-color: #DBEDFB;
+    color: #000000;
+    display: block;
+    float: right;
+    line-height: 1em;
+    margin-left: 5px;
+    margin-top: 4px;
+    padding: 1px 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: solid 1px #77aadf;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	border-radius: 3px;
+	 -moz-transition: background-color .2s ease-in, color .2s ease-in;
+    -webkit-transition: background-color .2s ease-in, color .2s ease-in;
+    transition: background-color .2s ease-in, color .2s ease-in; 
+}
+.ot-smallButtons a:hover {
+	background-color: #04A033;
+    color: #fff; 
+     -moz-transition: background-color .2s ease-in, color .2s ease-in;
+    -webkit-transition: background-color .2s ease-in, color .2s ease-in;
+    transition: background-color .2s ease-in, color .2s ease-in;
+}
+#logOut {
+	display: none;
+}
+#btnAccGlobal {
+	background-image: url(../Images/masterShell/settings.png);
+	background-position: center 1px;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	width: 10px;
+}
+#btnAccGlobal:hover, #btnAccGlobal:focus {
+	background-position: center -39px;
+}
+.browser_airsecurebrowser #logOut {
+	display: block;
+}
+#ot-brand1 {
+	display: block;
+	height: 60px;
+	background-color: #76A9D6;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #04A033;
+}
+#ot-logo_spot1 {
+	display: block;
+	height: 60px;
+	width: 325px;
+	background: url(../Images/masterShell/logo_default_big.gif) no-repeat left bottom;
+	float: left;
+}
+#ot-brand1 h1 {
+	float: left;
+	color: #fff;
+	font-size: 1.1em;
+    font-weight: bold;
+    line-height: 15px;
+    padding-top: 45px;
+    display: none;
+}
+#ot-logo_spot2 {
+	display: block;
+	height: 60px;
+	width: 255px;
+	background: url(../Images/masterShell/bigMountain.gif) no-repeat left bottom;
+	float: right;
+}
+#ot-brand2 {
+	display: block;
+	height: 29px;
+	background-color: #B7DA8C;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #04A033;
+}
+#ot-brand2 strong {
+	display: block;
+	height: 29px;
+	line-height: 29px;
+	background-color: #d3eabb;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #04A033;
+	float: right;
+	padding: 0px 5px;
+	font-size: 1.4em;
+}
+.practiceTest #ot-brand2 strong {
+	background: #d3eabb url(../Images/masterShell/bike/bikeTop.gif) no-repeat 100% 50%;
+	padding-right: 33px;
+	padding-left: 5px;
+	border-right: 3px solid transparent;
+}
+#tds-ot-footer {
+    color: #999999;
+    padding-bottom: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    text-align: right;
+}
+#tds-ot-footer span, #tds-ot-footer a {
+    color: #9DBF73;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* @end */
+
+/* @group action buttons */
+/*.actions {
+	display: block;
+	height: 2.2em;
+	margin-top: .5em;
+	font-size: 1.5em;
+}
+.actions a {
+	display: block;
+	float: left;
+	border: 1px solid #0E4878;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #000;
+	text-decoration: none;
+	line-height: 2em;
+	padding: 0px 1em;
+	margin-right: 1em;
+}
+.actions a:hover {
+	background-color: #0E4878 !important;
+	color: #fff;
+}
+.actions .positive {
+	border-color: #04A033;
+	color: #04A033;
+}
+.actions .positive:hover {
+	background-color: #04A033 !important;
+	color: #fff;
+}
+.actions .negative {
+	border-color: #990000;
+	color: #990000;
+}
+.actions .negative:hover {
+	background-color: #990000 !important;
+	color: #fff;
+}*/
+.actions {
+    display: block;
+    font-size: 1.5em;
+    /*height: 2.2em;*/
+    margin-top: 0.5em;
+}
+.actions:after {  
+	content: "";  
+	display: block;  
+	clear: both;  
+	visibility: hidden;  
+	font-size: 0;  
+	height: 0;  
+}  
+
+.actions span {
+	display: block;
+	float: left;
+	border: 1px solid #0E4878;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #000;
+	text-decoration: none;
+	line-height: 2em;
+	padding: 0px;
+	margin-right: 1em;
+}
+.TDS_PS_L4 .actions span{
+	margin-right: 0.5em;
+}
+.TDS_PS_L4 .actions span span{
+	margin-right: 0em;
+}
+.actions span span {
+	display: block;
+	float: left;
+	border: none;
+	line-height: inherit;
+	padding: 0px;
+	margin-right: 0px;
+}
+.actions button, .actions input {
+	border: none;
+    display: block;
+    margin: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #000000;
+    font-size: 93%;
+    /*line-height: 2;*/
+    min-height: 2em;
+    padding: 0px 1em;
+    -moz-transition: background-color .2s ease-in, color .2s ease-in;
+    -webkit-transition: background-color .2s ease-in, color .2s ease-in;
+    transition: background-color .2s ease-in, color .2s ease-in;
+}
+.actions button:hover, .action input:hover, 
+.actions button:active, .action input:active, 
+.actions button:focus, .action input:focus {
+	background-color: #0E4878 !important;
+	color: #fff;
+	-moz-transition: background-color .2s ease-in, color .2s ease-in;
+    -webkit-transition: background-color .2s ease-in, color .2s ease-in;
+    transition: background-color .2s ease-in, color .2s ease-in;
+}
+.TDS_PS_L1 .actions button, .TDS_PS_L2 .actions button, .TDS_PS_L3 .actions button{
+	max-width: 250px;
+	line-height: 1em;
+}
+.TDS_PS_L4 .actions button{
+	max-width: 300px;
+}
+.TDS_PS_L3 .actions button{
+	max-width: 240px;
+	line-height: 1em;
+}
+/*.TDS_PS_L1 .actions{
+	height: 3em;
+}
+.TDS_PS_L2 .actions{
+	height: 4em;
+}
+.TDS_PS_L3 .actions, .TDS_PS_L4 .actions{
+	height: 4em;
+}*/
+
+.actions .positive {
+	border-color: #04A033;
+	color: #04A033;
+}
+.actions .positive button, .actions .positive input {
+	color: #04A033;
+}
+.actions .positive button:hover, .actions .positive input:hover, 
+.actions .positive button:active, .actions .positive input:active, 
+.actions .positive button:focus, .actions .positive input:focus {
+	background-color: #04A033 !important;
+	color: #fff;
+}
+.actions .negative{
+	border-color: #990000;
+	color: #990000;
+}
+.actions .negative button, .actions .negative input {
+	color: #990000;
+}
+.actions .negative button:hover, .actions .negative input:hover, 
+.actions .negative button:active, .actions .negative input:active, 
+.actions .negative button:focus, .actions .negative input:focus {
+	background-color: #990000 !important;
+	color: #fff;
+}
+
+.actions .disabled {
+	background-color: #DBDBDB !important;
+	color: #666666 !important;
+}
+.actions .disabled button, .actions .disabled input {
+	background-color: #DBDBDB transparent !important;
+	color: #666666 !important;
+	cursor:default;
+}
+.actions .disabled button:hover, .actions .disabled input:hover, 
+.actions .disabled button:active, .actions .disabled input:active, 
+.actions .disabled button:focus, .actions .disabled input:focus {
+	background-color: transparent !important;
+	color: #666666 !important;
+}
+
+/* @end */
+
+/* @group Section Login */
+
+#loginWrap {
+	width: 45em;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 2em;
+}
+#sectionLogin .ot-shadowBox {
+	width: 45em;
+}
+#ot-brand2 strong .forPractice {
+	display: none;
+}
+.practiceTest #ot-brand2 strong .forPractice {
+	display: inline;
+}
+.practiceTest #loginWrap {
+	width: 70em;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 2em;
+}
+.practiceTest #sectionLogin .ot-shadowBox {
+	width: 45em;
+	float: left;
+}
+#sectionLogin .ot-innerShadow {
+	background: url("../Images/masterShell/greenGradient.gif") repeat-x scroll left top #C8E5AB !important;
+    border: solid 3px #FFFFFF;
+}
+.practiceTest #sectionLogin .ot-shadowBox h2 {
+    padding-right: 50px;
+	background: url("../Images/masterShell/bike/bikeTitle.gif") no-repeat 100% 100%;
+}
+#sectionLogin .actions .tds-button {
+	float: right;
+	margin: 0px;
+}
+#sectionLogin .actions {
+	padding-right: 20%;
+}
+.practiceTest #sectionLogin .actions {
+	padding-right: 0em;
+}
+#sectionLogin .actions span {
+	background-color: #fff;
+}
+.loginForm {
+	font-size: 1.4em;
+	line-height: 1em;
+}
+.practiceTest .loginForm {
+	border: solid 1px #9cba7b;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-size: 1.4em;
+	line-height: 1em;
+}
+.practiceTest #loginForm2 {
+	margin-top: 1em;
+}
+.checkHolder {
+	display: none;
+}
+.practiceTest .checkHolder {
+	display: block;
+	background-color: #9cba7b;
+	color: #fff;
+	padding: .2em 0em;
+	margin-bottom: 1em;
+}
+.practiceTest .loginForm .checkHolder label {
+	margin: 0px;
+	float: none;
+	display: inline;
+	width: inherit;
+	max-width: inherit;
+	min-width: inherit;
+	text-align: left;
+	line-height: 1.2em;
+}
+.practiceTest .loginForm .checkHolder input {
+	margin-left: .5em;
+	margin-bottom: 0px;
+	float: none;
+	display: inline;
+	width: inherit;
+	text-align: left;
+}
+.loginForm label {
+	margin-left: 1em;
+	display: block;
+	float: left;
+	text-align: right;
+	min-width: 7.5em;
+	max-width: 40%;
+}
+.HAW .loginForm label {
+	width: 40%;
+}
+.loginForm input {
+	margin-left: 1em;
+	margin-bottom: 1em;
+	display: block;
+	float: left;
+	width: 50%;
+}
+.loginForm br {
+	display: block;
+	clear: both;
+}
+#diagnostics {
+	font-size: 0.9em;
+	height: 1.5em;
+	border-top: solid 1px #fff;
+	margin-top: 1em;
+	line-height: 2em;
+}
+#diagnostics .browserVersion {
+    color: #8CAE69;
+    display: block;
+    text-decoration: none;
+    float: right;
+}
+#diagnostics a {
+    color: #04A033;
+    display: none;
+    float: left;
+    text-decoration: none;
+}
+.practiceTest #diagnostics a {
+    display: block;
+}
+#loginLinks {
+	font-size: 0.9em;
+	height: 1.5em;
+	border-top: solid 1px #fff;
+	margin-top: 1em;
+	line-height: 2em;
+	display: none;
+}
+#loginLinks a {
+    color: #04A033;
+    float: left;
+    text-decoration: none;
+}
+#sectionLogin .instructions {
+	font-size: inherit;
+	line-height: inherit;
+	border-top: solid 1px #fff;
+	border-bottom: none;
+	margin-top: 1em;
+	margin-bottom: 0em;
+	padding: 1em 0 0;
+}
+#sectionLogin .instructions ul li {
+	list-style-type: disc;
+	margin-top: .5em;
+	margin-right: 1.5em;
+	margin-bottom: .5em;
+	margin-left: 1.5em;
+}
+#sectionLogin .instructions ol {
+	list-style-type: decimal;
+	list-style-position: outside;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	margin-top: -1em;
+}
+#sectionLogin .instructions ol li {
+	padding-bottom: .3em;
+	padding-top: .3em;
+}
+#sectionLogin .instructions u {
+	line-height: 1.5em;
+}
+/* @group blurbs */
+
+#ot-blurbs {
+	display: block;
+	width: 24em;
+	float: right;
+	display: none;
+}
+.practiceTest #ot-blurbs {
+	display: block;
+}
+.blurb {
+	border: solid 3px #fff;
+	-moz-box-shadow: 0em 0em 5px #666;
+	-webkit-box-shadow: 0em 0em 5px #666;
+	box-shadow: 0em 0em 5px #666;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	margin-bottom:20px;
+	margin-left: 20px;
+	text-align: left;
+	background-color: #c8e5ac;
+	padding: 10px;
+	font-size: 1.2em;
+	line-height: 1.2em;
+}
+.browserVer_2.browser_firefox .blurb{
+	border-color: #eaeaea;
+}
+.linkbox {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	border: solid 1px #9cbe7b;
+	background-color: #b2ce96;
+	padding: .3em;
+	margin-top: .3em;
+	margin-right: -.3em;
+	margin-left: -.3em;
+}
+.gridlink {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	border: solid 1px #9cbe7b;
+	margin-top: .3em;
+	margin-right: -.3em;
+	margin-left: -.3em;
+	background: #b2ce96 url(../Images/masterShell/grid.gif) no-repeat .3em center;
+	padding: .3em .3em .3em 40px;
+	font-size: 1.2em;
+	line-height: 1.1em;
+}
+.linkbox:hover, .gridlink:hover {
+	background-color: #fff;
+}
+.goPractice {
+    background-image: url("../Images/masterShell/bike/goPractice.gif");
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    color: #000000;
+    display: block;
+    font-size: 1.4em;
+    font-weight: bold;
+    height: 49px;
+    line-height: 49px;
+    padding-right: 68px;
+    text-align: right;
+    text-decoration: none;
+    margin-top: 1em;
+}
+/* @end */
+/* @group error messages */
+
+.notificationError, .notificationNotice, .notificationSuccess {
+	border:1px solid #DDDDDD;
+	margin: 1em;
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-top: 1em;
+	padding-right: 0.8em;
+	padding-bottom: 0.8em;
+	padding-left: 2em;
+	font-size: 1.4em;
+}
+.notificationError {
+	background-color: #FBE3E4;
+	background-image: url(../Images/masterShell/notifyWarn.gif);
+	border-top-color: #9D0A0E;
+	border-right-color: #9D0A0E;
+	border-bottom-color: #9D0A0E;
+	border-left-color: #9D0A0E;
+}
+.notificationNotice {
+	background-color: #F7F7F7;
+	background-image: url(../Images/masterShell/notifyNotice.gif);
+	border-top-color: #FFCC00;
+	border-right-color: #FFCC00;
+	border-bottom-color: #FFCC00;
+	border-left-color: #FFCC00;
+}
+.notificationSuccess {
+	background-color: #F7F7F7;
+	background-image: url(../Images/masterShell/notifyGood.gif);
+	border-top-color: #197A30;
+	border-right-color: #197A30;
+	border-bottom-color: #197A30;
+	border-left-color: #197A30;
+}
+.notificationError a, .notificationNotice a, .notificationSuccess a {
+    color:#000000;
+}
+
+/* @end */
+
+
+/* @end */
+
+/* @group Section Verify Login */
+
+.ot-infoConfirm {
+	font-size: 1.8em;
+	line-height: 2em;
+}
+.practiceTest #verifyGradeSelector {
+    background-color: #D2EAB9;
+    border-bottom: 1px solid #049F33;
+    border-top: 1px solid #049F33;
+    display: inherit;
+    margin-left: -0.6em;
+    margin-right: -.6em;
+    padding: 0 0 0 0.5em;
+}
+.practiceTest #verifyGradeSelector select {
+   	margin-left: 0.5em;
+   	line-height: 1em;
+}
+/* keep drop-down from going off the screen */
+.practiceTest.TDS_PS_L2 #verifyGradeSelector select {
+   	font-size: .8em;
+}
+.practiceTest.TDS_PS_L3 #verifyGradeSelector select {
+   	font-size: .7em;
+}
+.practiceTest.TDS_PS_L4 #verifyGradeSelector select {
+   	font-size: .6em;
+}
+.ot-infoConfirm .labeled {
+	color: #646565;
+}
+
+/* @end */
+
+/* @group Section Test Selection */
+
+#sectionTestSelection .instructions {
+	padding: .5em;
+	border: none;
+}
+.noMore {
+	color: #999999;
+	font-size: 0.9em;
+	display: block;
+	border: 1px solid #FFFFFF;
+	font-style: italic;
+	font-weight: normal;
+}
+#testSelections:after {
+	content: "";  
+	display: block;  
+	clear: both;  
+	visibility: hidden;  
+	font-size: 0;  
+	height: 0;
+}
+#sectionTestSelection .testSelection {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 1em;
+	background: url(../Images/masterShell/test_sprites.png) no-repeat 16px 12px;
+	background-color: #e5f4e4; /* for older browsers*/
+	background-color: rgba(218, 239, 216, .7);
+	-moz-transition: background-color .2s ease-in, -moz-box-shadow .6s linear;
+    -webkit-transition: background-color .2s ease-in, -webkit-box-shadow .6s linear;
+    transition: background-color .2s ease-in, box-shadow .6s linear;
+	padding: 1em 1em 1em 70px;
+	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	width: 48%;
+	margin-right: 1em;
+	min-height: 4em;
+}
+/* keeps rows starting at same point*/
+#sectionTestSelection .testSelection.odd {
+	clear: both;
+}
+.TDS_PS_L2 #sectionTestSelection .testSelection, .TDS_PS_L3 #sectionTestSelection .testSelection, .TDS_PS_L4 #sectionTestSelection .testSelection {
+	width: inherit;
+	float: none;
+	margin-right: 0em;
+	min-height: 2em;
+}
+.TDS_PS_L1 #sectionTestSelection .testSelection {
+	background-position: 16px 21px;
+	min-height: 4.5em;
+}
+.TDS_PS_L2 #sectionTestSelection .testSelection {
+	background-position: 16px 31px;
+}
+.TDS_PS_L3 #sectionTestSelection .testSelection {
+	background-position: 16px 44px;
+}
+.TDS_PS_L4 #sectionTestSelection .testSelection {
+	background-position: 16px 56px;
+}
+#sectionTestSelection .testSelection:hover, 
+#sectionTestSelection .testSelection:hover:focus, 
+#sectionTestSelection .testSelection:focus {
+	background-color: #cadfc6;
+	-webkit-box-shadow: 0em 0em .5em #666;
+	-moz-box-shadow: 0em 0em .5em #666;
+	box-shadow: 0em 0em .5em #666;
+}
+#sectionTestSelection .testSelection.resume {
+	background-position: 16px -578px;
+}
+.TDS_PS_L1 #sectionTestSelection .testSelection.resume {
+	background-position: 16px -580px;
+}
+.TDS_PS_L2 #sectionTestSelection .testSelection.resume {
+	background-position: 16px -570px;
+}
+.TDS_PS_L3 #sectionTestSelection .testSelection.resume {
+	background-position: 16px -555px;
+}
+.TDS_PS_L4 #sectionTestSelection .testSelection.resume {
+	background-position: 16px -545px;
+}
+#sectionTestSelection .testSelection.inactive, 
+#sectionTestSelection .testSelection.inactive:hover, 
+#sectionTestSelection .testSelection.inactive:active, 
+#sectionTestSelection .testSelection.inactive:focus {
+	background-position: 16px -1176px;
+	background-color: #fafafa; /* for older browsers*/
+	background-color: rgba(235, 235, 235, .2);
+	cursor: default;
+	color: #999;
+	-moz-box-shadow: inherit;
+	-webkit-box-shadow: inherit;
+	box-shadow: inherit;
+}
+.TDS_PS_L1 #sectionTestSelection .testSelection.inactive, 
+.TDS_PS_L1 #sectionTestSelection .testSelection.inactive:hover, 
+.TDS_PS_L1 #sectionTestSelection .testSelection.inactive:active, 
+.TDS_PS_L1 #sectionTestSelection .testSelection.inactive:focus {
+	background-position: 16px -1180px;
+}
+.TDS_PS_L2 #sectionTestSelection .testSelection.inactive, 
+.TDS_PS_L2 #sectionTestSelection .testSelection.inactive:hover, 
+.TDS_PS_L2 #sectionTestSelection .testSelection.inactive:active, 
+.TDS_PS_L2 #sectionTestSelection .testSelection.inactive:focus {
+	background-position: 16px -1169px;
+}
+.TDS_PS_L3 #sectionTestSelection .testSelection.inactive, 
+.TDS_PS_L3 #sectionTestSelection .testSelection.inactive:hover, 
+.TDS_PS_L3 #sectionTestSelection .testSelection.inactive:active, 
+.TDS_PS_L3 #sectionTestSelection .testSelection.inactive:focus {
+	background-position: 16px -1156px;
+}
+.TDS_PS_L4 #sectionTestSelection .testSelection.inactive, 
+.TDS_PS_L4 #sectionTestSelection .testSelection.inactive:hover, 
+.TDS_PS_L4 #sectionTestSelection .testSelection.inactive:active, 
+.TDS_PS_L4 #sectionTestSelection .testSelection.inactive:focus {
+	background-position: 16px -1144px;
+}
+#sectionTestSelection .testSelection.inactive:focus {
+	background-color: #efefef; /* for older browsers*/
+	background-color: rgba(235, 235, 235, .5);
+}
+#sectionTestSelection .testSelection h3 {
+	font-weight: bold;
+	font-size: 1.2em;
+	border-bottom: solid 1px #999;
+	float: left;
+	line-height: 1.1em;
+	margin-bottom: .1em;
+}
+#sectionTestSelection .testSelection h3:after {
+	content: "";  
+	display: block;  
+	clear: both;  
+	visibility: hidden;  
+	font-size: 0;  
+	height: 0;
+}
+#sectionTestSelection .testSelection p {
+	display: block;
+	clear: both;
+	padding-bottom: 0px;
+	line-height: 1.5em;
+	
+}
+#sectionTestSelection .testSelection em {
+	font-style: normal;
+	/*font-weight: bold;
+	font-size: 1.1em;*/
+}
+/*#sectionTestSelection .testAction {
+	display: inline-block;
+	width: 1px;
+	color: transparent;
+	overflow: hidden;
+	text-indent: -9999px;
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}*/
+/* @end */
+
+
+/* @group Section Accommodations */
+
+.accommodations {
+	font-size: 1.4em;
+	line-height: 1em;
+}
+.accommodations h3 {
+	font-weight: bold;
+	font-size: 1.1em;
+	border-bottom: solid 1px #ccc;
+	margin-bottom: .5em;
+}
+.accommodations .multiselect, .accommodations .singleselect, .accommodations .checkbox {
+	margin-bottom: 1em;
+}
+.accommodations label {
+    clear: left;
+    display: block;
+    float: left;
+    margin-right: .3em;
+    text-align: right;
+    width: 8em;
+}
+.accommodations select {
+    margin-top: .1em;
+}
+.accommodations label input {
+    float: right;
+    margin-right: -2.1em;
+    margin-top: .3em;
+}
+.accommodations .values label {
+	margin-top: .3em;
+}
+.accommodations .multiselect .values {
+	float: left;
+	margin-top: -.3em;
+}
+.accommodations .multiselect .values label {
+	text-align: left;
+	float: none;
+	width: auto;
+}
+.accommodations .multiselect .values input {
+	float: none;
+	margin-right: .5em;
+}
+/*.unproctored #accPrintonRequest {
+    display: none;
+}*/
+
+/* @end */
+
+
+/* @group Section Verify Settings */
+
+#ot-infoConfirm, #accSummary {
+	font-size: 1.3em;
+	line-height: 2em;
+}
+#ot-infoConfirm {
+	margin-bottom: 1em;
+}
+#sectionTestVerify .instructions {
+	margin-top: 1em;
+}
+.summary-segment {
+	margin-bottom: 2em;
+	font-size: 1.4em;
+	line-height: 1em;
+}
+.summary-segment h3 {
+	font-weight: bold;
+	font-size: 1.1em;
+	border-bottom: solid 1px #ccc;
+	margin-bottom: .5em;
+}
+.summary-segment-type {
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+.summary-segment-type-label {
+  	padding-right: .5em;
+}
+.summary-segment-type-values {
+	color: #666;
+}
+/* @end */
+
+/* @group Section Instructions */
+
+#speakHelp {
+	display: none;
+	height: 18px;
+}
+.browser_airsecurebrowser #speakHelp {
+	display: block;
+}
+.startSpeak, .stopSpeak {
+	display: none;
+	float: left;
+	color: #000;
+	text-decoration: none;
+	width: 18px;
+	height: 18px;
+	text-indent: -9999px;
+	background: url(../Shared/Images/controls/audio2010.png) no-repeat;
+	margin-left: 2px;
+}
+.browser_airsecurebrowser .startSpeak {
+	background-position: -422px -416px;
+	display: block;
+}
+.startSpeak:hover {
+	background-position: -441px -416px;
+}
+.startSpeak.disabled, .startSpeak.disabled:hover {
+	background-position: -508px -443px !important;
+	background-color: transparent !important;
+	cursor: default;
+}
+.browser_airsecurebrowser .stopSpeak {
+	background-position: -459px -416px;
+	display: block;
+}
+.stopSpeak:hover {
+	background-position: -477px -416px;
+}
+.stopSpeak.disabled, .stopSpeak.disabled:hover {
+	background-position: -569px -443px !important;
+	background-color: transparent !important;
+	cursor: default;
+}
+.checker:focus {
+	border: solid 3px #7da7d9;
+}
+#quickQuide.yui-panel-loading {
+	background: url(../Shared/Images/loadingAnimation.gif) no-repeat center center;
+	height: 300px;
+	border: solid 1px #ccc;
+}
+#quickQuide.yui-panel-loading iframe {
+	display: none;
+}
+/* @end */
+
+
+
+/* @group pop-ups */
+#help, #keyNav, #writingInstructions {
+	position: absolute;
+	height: 510px;
+	width: 700px;
+	z-index: 100;
+	border: 2px solid #f6c501;
+	right: 20px;
+	background-color: #FFFFFF;
+	top: 30px;
+	-moz-box-shadow: 0em 0em 1em #000;
+	-webkit-box-shadow: 0em 0em 1em #000;
+	box-shadow: 0em 0em 1em #000;
+}
+#keyNav {
+	right: 50px;
+	top: 45px;
+	border: 2px solid #d2b338;
+}
+#writingInstructions {
+	right: 60px;
+	top: 30px;
+	border: 2px solid #d2b338;
+}
+.TDS_PS_Larger #help {
+	width: 800px;
+}
+.TDS_PS_Largest #help {
+	width: 900px;
+}
+#help iframe {
+	width: 100%;
+	height: 465px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #f6c501;
+}
+#help {
+	background-color: #fdfac2;;
+}
+.popupHeader {
+	background-color: #fdfac2;
+	display: block;
+	font-weight: bold;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #f6c501;
+	line-height: 18px;
+	height: 18px;
+	font-family: "Lucida Grande", "Lucida Sans", Arial, Helvetica, sans-serif;
+}
+.popupTitle {
+	display: block;
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	padding-left: 10px;
+}
+.popupClose a {
+	background-color: #faf5a2;
+	display: block;
+	float: right;
+	height: 18px;
+	background-image: url(../Shared/Images/icons/xmark.gif);
+	background-repeat: no-repeat;
+	background-position: 5px 3px;
+	padding-right: 10px;
+	padding-left: 20px;
+	line-height: 18px;
+	color: #000000;
+	text-decoration: none;
+	border-left-width: 2px;
+	border-left-style: solid;
+	border-left-color: #f6c501;
+}
+.popupClose a:hover {
+	background-color: #990000;
+	text-decoration:underline;
+	color: #FFFFFF;
+}
+/* @end */
+
+/* @group Section Results */
+
+.identity {
+	font-size: 1.3em;
+}
+.identity ul li, .identity ol li {
+	line-height: 2em;
+}
+#scorePolling {
+	line-height: 2em;
+	padding-bottom: .5em;
+	margin-bottom: .5em;
+}
+#scorePolling .spinner {
+	background: url(../Shared/Images/saved.gif) no-repeat;
+	width: 25px;
+	height: 25px;
+	display: block;
+	float: left;
+	margin-top: .2em;
+	margin-right: .3em;
+}
+.ferpa {
+	font-size: .9em;
+	margin-top: 1em;
+}
+#markedWarning {
+	background: url(../Shared/Images/controls/marked.gif) no-repeat 1em 1em;
+	border: solid 1px #666;
+	font-size: 1.3em;
+	padding-left: 4em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	margin-bottom: 1em;
+}
+.TDS_PS_L1 #markedWarning {
+	background-image: url(../Shared/Images/controls/marked_1.gif);
+}
+.TDS_PS_L2 #markedWarning {
+	background-image: url(../Shared/Images/controls/marked_2.gif);
+}
+.TDS_PS_L3 #markedWarning {
+	background-image: url(../Shared/Images/controls/marked_3.gif);
+}
+.TDS_PS_L4 #markedWarning {
+	background-image: url(../Shared/Images/controls/marked_4.gif);
+}
+#sectionTestResults #scoreSummary {
+	display: none;
+}
+#sectionTestResults.scoreAvailable #scoreSummary {
+	display: block;
+}
+
+#sectionTestResults #scorePolling {
+	display: none;
+}
+#sectionTestResults.scoreWaiting #scorePolling {
+	display: block;
+}
+
+#sectionTestResults #scoreNone {
+	display: none;
+}
+#sectionTestResults.scoreUnavailable #scoreNone {
+	display: block;
+}
+
+#sectionTestResults .ptShow {
+	display: none;
+}
+#sectionTestResults.scoreUnavailableInPT .ptShow {
+	display: inline;
+}
+#sectionTestResults.scoreUnavailableInPT .yourScore {
+	display: none;
+}
+
+/* TODO: logic for when to show this button */
+#sectionTestResults #btnEnterMoreScores {
+	display: none;
+}
+.app_ScoreEntry #sectionTestResults #btnEnterMoreScores, .app_ResponseEntry #sectionTestResults #btnEnterMoreScores {
+	display: block;
+}
+
+
+#scoreList {
+	font-size: 1.3em;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+
+#itemScores td, #itemScores th {
+	border: solid 1px #CCC;
+	text-align:center;
+	padding:5px
+}
+#itemScores th {
+	font-weight:bold;
+}
+#itemScores td.answerWrong {
+	color:#790000;
+	font-weight:bold;
+	background-color:#ffebec;
+}
+#itemScores td.answerPartial {
+	color:#666;
+	background-color:#f7f7f7;
+}
+/* @end */
+
+/* @group Section Approval */
+
+#sectionTestApproval .ot-shadowBox {
+	width: 35em;
+}
+#sectionTestApproval .ot-innerShadow {
+	background: #C8E5AB url(../Images/masterShell/greenGradient.gif) repeat-x scroll left top;
+    border: solid 3px #FFFFFF;
+}
+#lblApprovalMessage {
+	display: block;
+	background: url(../Shared/Images/loadingAnimation.gif) no-repeat left top;
+	padding-top: 2em;
+}
+#sectionTestApproval .actions .tds-button {
+	font-size: .7em;
+	background-color: #fff;
+}
+
+/* @end */
+
+/* @group Section Diagnostics */
+
+.nugget {
+	display: block;
+	border-bottom: solid 1px #ccc;
+	font-size: 1.4em;
+	margin-bottom: 1em;
+}
+.nugget .actions {
+	font-size: 1em;
+}
+#connSpeed {
+	float: left;
+	/*line-height: 2em;*/
+	margin-right: .5em;
+}
+.inline {
+	float: left;
+	display: inline;
+	margin-top: -.5em;
+}
+#downloadResults, #uploadResults, #bandwidthSummary {
+	font-weight: bold;
+	float: left;
+	margin-right: .5em;
+	margin-bottom: 1em;
+}
+#btnDiagELPA {
+	display: none;
+}
+#sectionDiagnostics .actions .tds-button, #sectionTTSCheck .actions .tds-button {
+	margin-bottom: .5em;
+}
+/* @end */
+
+/* @group Section Notifications */
+
+.proctorMessage {
+	background-color: #FFFFFF;
+	border: 1px solid #B7DA8C;
+	margin-top: 10px;
+	padding: 5px;
+	overflow: auto;
+}
+.proctorMessage h3 {
+	font-size: 1.5em;
+	font-style: italic;
+	font-weight: normal;
+}
+.proctorMessage p {
+	margin-top: .5em;
+	margin-right: 0px;
+	margin-bottom: .5em;
+	margin-left: 0px;
+}
+.errorNumber {
+	text-align: right;
+	font-weight: bold;
+	display: block;
+	margin-top: .5em;
+}
+#sectionsNotification .actions a {
+	display: block;
+	float: left;
+	border: 1px solid #0E4878;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	color: #000;
+	text-decoration: none;
+	line-height: 2em;
+	padding: 0px 10px;
+	margin-right: 1em;
+}
+#sectionsNotification .actions a:hover, #sectionsNotification .actions a:focus {
+	background-color: #0E4878 !important;
+	color: #fff;
+}
+/* @end */
+
+/* @group Section Bad Browser */
+#browserWrong {
+	background-image: url(../Images/alerts/attentionWhite.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 70px;
+	background-color: #FFFFFF;
+	font-size: 1.2em;
+}
+#browserDenied, #browserDeniedOSXIncompatible, #browserDeniedOSXLatest {
+	background-image: url(../Images/alerts/stopWhite.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 70px;
+	background-color: #FFFFFF;
+	font-size: 1.2em;
+}
+*:first-child+html #browserWrong, *:first-child+html #browserDenied, *:first-child+html #browserDeniedOSXIncompatible, *:first-child+html #browserDeniedOSXLatest {
+	height: 1%;
+}
+*html #browserWrong, *html #browserDenied, *html #browserDeniedOSXIncompatible, *html #browserDeniedOSXLatest {
+	height: 1%;
+}
+
+/* @end */
+
+
+/* @group Firefox 2.0 Hacks */
+.browser_firefox.browserVer_2.showingDialog, .browser_firefox.browserVer_2.masked, 
+.browser_airsecurebrowser.browserVer_3_5.showingDialog, .browser_airsecurebrowser.browserVer_3_5.masked, 
+.browser_airsecurebrowser.browserVer_3_6.showingDialog, .browser_airsecurebrowser.browserVer_3_6.masked {
+	overflow: hidden;
+}
+
+.browser_firefox.browserVer_2.showingDialog #sections select, .browser_firefox.browserVer_2.masked #sections select, 
+.browser_airsecurebrowser.browserVer_3_5.showingDialog #sections select, .browser_airsecurebrowser.browserVer_3_5.masked #sections select, 
+.browser_airsecurebrowser.browserVer_3_6.showingDialog  #sections select, .browser_airsecurebrowser.browserVer_3_6.masked  #sections select {
+	display: none;
+}
+.browser_firefox.browserVer_2.platform_mac.showingDialog #tools .bd, 
+.browser_airsecurebrowser.browserVer_3_5.platform_mac.showingDialog #tools .bd, 
+.browser_airsecurebrowser.browserVer_3_6.platform_mac.showingDialog #tools .bd {
+	overflow: hidden;
+}
+.browser_firefox.browserVer_2.platform_mac.showingDialog #tools iframe, 
+.browser_airsecurebrowser.browserVer_3_5.platform_mac.showingDialog #tools iframe, 
+.browser_airsecurebrowser.browserVer_3_6.platform_mac.showingDialog #tools iframe {
+	height: 10000px;
+}
+.browser_firefox.browserVer_2.platform_mac #sectionDiagnostics .actions button, 
+.browser_firefox.browserVer_2.platform_mac #sectionTTSCheck .actions button, 
+.browser_airsecurebrowser.browserVer_3_5.platform_mac #sectionDiagnostics .actions button, 
+.browser_airsecurebrowser.browserVer_3_5.platform_mac #sectionTTSCheck .actions button, 
+.browser_airsecurebrowser.browserVer_3_6.platform_mac #sectionDiagnostics .actions button, 
+.browser_airsecurebrowser.browserVer_3_6.platform_mac #sectionTTSCheck .actions button
+ {
+	max-width: inherit;
+}
+/* @end */ 
+
+#sectionLoginVerify .instructions, #sectionTestSelection .instructions, #sectionTestVerify .instructions {
+	background-color: rgba(235, 235, 235, .2);
+	color: #616262;
+}
+
+/* @group Network Test */
+#connSpeed, #chooseStudentCount{
+	padding-bottom: 0.5em;
+	display: block;
+	float: none;
+}
+#chooseTest, #chooseStudentCount{
+	padding-left: 15px;
+	display: block;
+	padding-bottom: 0.5em;
+	float: none;
+	position: relative;
+	font-size: 0.9em;
+}
+.error, #chooseStudentCountError, #chooseTestError /*Extras for older browsers*/{
+	color: red;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+#bandwidthSummary{
+	padding: 1em;
+	font-weight: normal;
+	line-height: 1.2em;
+	font-size: 0.9em;
+}
+.speedBad{
+	border: 2px solid #df4242;
+	background-color: #ffd1d1;
+	border-radius: 6px;
+}
+.speedOK{
+	border: 2px solid #d8c817;
+	background-color: #efefdc;
+	border-radius: 6px;
+}
+.speedGreat{
+	border: 2px solid #68d014;
+	background-color: #cadfc6;
+	border-radius: 6px;
+}
+.loadingAnimation {
+	display: block;
+	width: 208px;
+	height: 13px;
+	background-image: url(../Shared/Images/loadingAnimation.gif);
+	float: right;
+	margin-left: .5em;
+}

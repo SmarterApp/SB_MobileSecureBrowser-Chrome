@@ -1,0 +1,311 @@
+@charset "UTF-8";
+/*Generic Blue Theme */
+
+/* @group general */
+.ot-innerShadow {
+	border: solid 2px #034577;
+}
+.ot-shadowBox .instructions {
+	border-color: #0F6797;
+}
+.ot-shadowBox h2 {
+	border-color: #94B6D9;
+}
+/* @end */
+
+/* @group header and footer */
+#tds-ot-header {
+	border-bottom: none;
+	background: #224b76 url(../images/gradient_deepBlue.png) repeat-x left bottom;
+	height: 116px;
+	border-bottom: 1px solid #44515b;
+}
+.browser_safari #ot-topBar{
+	max-width: 100%;
+	overflow: hidden;
+	margin-right: 5px;
+	padding: 0;
+}
+.browser_safari #ot-topBar a#btnHelp{
+	min-width: 25px;
+	display: block;
+}
+
+#tds-ot-branding {
+	background-color: transparent;
+}
+#ot-topBar {
+	background-color: transparent;
+	color: #fff;
+	border-bottom: none;
+}
+
+#ot-studentInfo {
+	background-color: transparent;
+	border-right: none;
+	float: right;
+    margin-right: 1em;
+}
+.sessionID {
+	border-right: none;
+}
+.ot-smallButtons a {
+	background-color: #c6d8e2;
+    color: #000000;
+    display: block;
+    float: right;
+    line-height: 1em;
+    margin-left: 5px;
+    margin-top: 4px;
+    padding: 1px 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: solid 1px #bfc880;
+    -moz-border-radius: 3px;
+	border-radius: 3px; 
+}
+.ot-smallButtons a:hover {
+	background-color: #fff;
+	color: #000;
+}
+#btnAccGlobal:hover{
+	background-position: center 1px;
+}
+#ot-brand1 {
+	height: 60px;
+    margin: 0 0 0 20px;
+    width: 777px;
+	border: none;
+	background: transparent url(../images/banner.png) no-repeat left center;
+}
+
+.ie6 #ot-brand1{
+	background-color: #fff;
+}
+#ot-logo_spot1 {
+	background-color: none;
+	background-image: none;
+	width: 426px;
+	height: 30px;
+}
+#ot-logo_spot2 {
+	display: none;
+}
+#ot-brand2 {
+	background: url(../images/title.png) no-repeat 20px 0px transparent;
+	border: none !important;
+	height: 28px;
+}
+.browser_ie.browserVer_6 #ot-brand2{ background: url(../images/title.gif) no-repeat 20px 0px transparent; }
+#ot-brand2 strong {
+	border-left: none;
+	color: #fff;
+	margin-left: 0px;
+	background: #9f5056;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	height: 31px;
+	line-height: 31px;
+	margin-top: 0px;
+	font-weight: normal;
+}
+
+
+.practiceTest #ot-brand2 strong {
+	background-image: url(../images/bike/bikeTop.png);
+	background-color: #9f5056;
+	border-right: none;
+	padding-right: 50px;
+}
+#tds-ot-footer span, #tds-ot-footer a {
+	color: #034577;
+}
+/*.header .titleThing {
+	color: #000;
+	background-color: #9ebec4;
+	background-image: url(../images/breadcrumb.gif);
+}*/
+/* @end */
+
+/* @group action buttons */
+.actions .positive {
+	border-color: #0d4373;
+	color: #0d4373;
+}
+.actions .positive:hover, #sectionLogin .actions a:hover {
+	background-color: #0d4373 !important;
+}
+
+/* @end */
+
+/* @group Section Login */
+#sectionLogin .ot-innerShadow {
+	background-color: #fff !important;
+	background-image: none !important;
+	border-color: #034577;
+}
+#sectionLogin .actions .positive{
+	background-color: #fff;
+	border-color: #034577;
+}
+#sectionLogin .actions .positive span button{
+	color: #034577;
+}
+#sectionLogin .actions .positive:hover, #sectionLogin .actions .tds-button-hover{
+	color: #fff;
+	border-color: #034577;
+	background-color: #034577;
+}
+#sectionLogin .actions .positive:hover span button{
+	color: #fff;
+	border-color:#034577;
+	background-color: #034577 !important;
+}
+.practiceTest #sectionLogin .ot-shadowBox h2 {
+	background-image: url(../images/bike/bikeTitle.gif);
+}
+.practiceTest #loginForm1, .practiceTest #loginForm2 {
+	border-color: #034577;
+}
+.practiceTest .checkHolder {
+	background-color: #034577;
+}
+#diagnostics .browserVersion {
+	color: #A6C9E3;
+}
+#diagnostics a {
+    color: #0F6797;
+    display: none;
+    float: left;
+    text-decoration: none;
+}
+#diagnostics a:focus, #diagnostics a:active, #loginLinks a:focus, #loginLinks a:active {
+    color: #FFF !important;
+}
+#loginLinks a {
+	color: #0F6797 !important;
+}
+.goPractice {
+	background-image: url(../images/bike/goPractice.gif);
+}
+a.goPractice:focus{ background-color: #446351 !important;}
+
+.browserWrong {
+	border: 1px solid #0F6797;
+}
+.browserDenied {
+	border: 1px solid #0F6797;
+}
+/* @group blurbs */
+.blurb {
+	background-color: #fff !important;
+	background-image: none !important;
+	border-color: #034577;
+}
+.browserVer_2.browser_firefox .blurb{
+	border-color: #034577;
+}
+.linkbox, .gridlink {
+	border-color: #256498;
+	background-color: #c9e1f7;
+}
+/* @end */
+
+/* @end */
+
+/* @group Section Verify Login */
+.practiceTest #verifyGradeSelector {
+   	background-color: #DCEBF5;
+    border: 1px solid #0F6797;
+}
+/* @end */
+
+/* @group Section Test Selection */
+#sectionTestSelection .tries {
+	text-align: center;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #76A9D6;
+	border-left-color: #76A9D6;
+}
+.resumeTest, .newTest {
+	background-color: #DCEBF5;
+    background-image: url("../images/select.gif");
+    border: 1px solid #164C7E;
+}
+#sectionTestSelection .resumeTest:hover, #sectionTestSelection .newTest:hover {
+	background-color: #164C7E;
+}
+/* @end */
+
+
+
+/* @group Section Approval */
+
+#sectionTestApproval .ot-innerShadow {
+	background-color: #fff !important;
+	background-image: none !important;
+}
+
+/* @end */
+
+/* @group Not currently used or unkown */
+.proctorMessage {
+	border:1px solid #bfd4d7;
+}
+#scoreMessage {
+	background-color:#fff4e2;
+	border-color:#013663;
+}
+.forgotLink a {
+	color: #0d4373;
+}
+body.practiceTest .proctorMessage {
+	border: 1px solid #ffd377;
+}
+.shortcutlink {
+	color: #164c7e;
+}
+.simpleScore {
+	color:#164c7e;
+}
+.scoreMessage {
+	background-color: #fff0d8;
+}
+.soundcheck .choices {
+	border-top: solid 1px #fff0d8;
+}
+/*.gridtraining {
+	border-color: #ffa20c;
+}
+.gridtraining a {
+	color: #ffd377;
+}*/
+/* @end */
+
+/*Reset font on lower browsers*/
+.firefox .browserVer_3_5 #ot-brand2, .firefox .browserVer_3_0 #ot-brand2, .firefox .browserVer_2_0 #ot-brand2, .firefox .browserVer_3_5 #ot-topBar, .firefox .browserVer_3_0 #ot-topBar, .firefox .browserVer_2_0 #ot-topBar{
+	font-family: Arial, Helvetica, sans-serif !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
