@@ -1,0 +1,28 @@
+{
+  "name": "SmarterAppBrowser",
+  "description": "Smarter Platform for delivering secure assessments",
+  "version": "2.9.8.6",
+  "manifest_version": 2,
+  "permissions": [ "webview", "tts", "storage", "audio", "audioCapture", "accessibilityFeatures.modify", "accessibilityFeatures.read"],
+  "app":{
+	  "background" : {
+		"scripts": ["background.js"]
+	  }
+  }, 
+  "icons": {
+    "128": "kiosk.png"
+  },
+  "minimum_chrome_version": "35.0.0.0",
+  "kiosk_enabled": true,
+  "kiosk_only": true,
+    "webview": {
+        "partitions": [
+            {
+                "name": "trusted*",
+                "accessible_resources": [
+                    "SmarterBalanced_logo.png"
+                ]
+            }
+        ]
+    }
+}
